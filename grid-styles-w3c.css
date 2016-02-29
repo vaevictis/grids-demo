@@ -1,7 +1,7 @@
 
-.w3c-grid-container {
+body {
   display: grid;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto;
   grid-template-columns: repeat(3, auto);
   /*grid-columns: 100px 1% 1fr 1% 50px;
   grid-rows: auto 10px auto 10px auto; /* 1 */
@@ -11,14 +11,6 @@ header {
   border: 1px solid lavender;
   grid-row-start: 1;
   grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-
-footer {
-  border: 1px solid maroon;
-  grid-row-start: 4;
-  grid-row-end: 5;
   grid-column-start: 1;
   grid-column-end: 4;
 }
@@ -33,15 +25,23 @@ footer {
 
 .aside-column {
   border: 1px solid green;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 
 main {
+  grid-row-start: 2;
+  grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 2;
+}
+
+footer {
+  border: 1px solid maroon;
+  grid-row-start: 3;
   grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
