@@ -1,0 +1,87 @@
+/* Box-sizing and other resets */
+html {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* good ol' clearfix */
+.grid-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Some color definitions and other visual enhancements - for a better-looking World */
+body {
+  border: 5px solid lightgreen;
+  font-family: 'Roboto';
+}
+
+header { background-color: #e56343; }
+section { background-color: #daa844; }
+main { background-color: #6ab59f; }
+.nav-column { background-color: #5da0b3; }
+.aside-column { background-color: #e89292; }
+
+footer {
+  background-color: #8c3232;
+  color: white;
+}
+
+main p {
+  text-align: justify;
+  margin: 20px;
+}
+
+
+/* The actual grid mecanic */
+.w3c-grid-container {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: repeat(3, auto);
+  /*grid-columns: 100px 1% 1fr 1% 50px;
+  grid-rows: auto 10px auto 10px auto; /* 1 */
+}
+
+header {
+  border: 1px solid lavender;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+footer {
+  border: 1px solid maroon;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.nav-column {
+  border: 1px solid blue;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.aside-column {
+  border: 1px solid green;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+main {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
