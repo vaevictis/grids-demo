@@ -7,7 +7,8 @@ body {
   grid-template-areas:
     "header header header header"
     "nav aside main main"
-    "footer footer footer ads"
+    "footer footer footer ads";
+  grid-gap: 5px;
 }
 
 header {
