@@ -1,44 +1,4 @@
-/* Box-sizing and other resets */
-html {
-  box-sizing: border-box;
-  text-align: center;
-}
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-/* good ol' clearfix */
-.grid-container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Some color definitions and other visual enhancements - for a better-looking World */
-body {
-  border: 5px solid lightgreen;
-  font-family: 'Roboto';
-}
-
-header { background-color: #e56343; }
-section { background-color: #daa844; }
-main { background-color: #6ab59f; }
-.nav-column { background-color: #5da0b3; }
-.aside-column { background-color: #e89292; }
-
-footer {
-  background-color: #8c3232;
-  color: white;
-}
-
-main p {
-  text-align: justify;
-  margin: 20px;
-}
-
-
-/* The actual grid mecanic */
 .w3c-grid-container {
   display: grid;
   grid-template-rows: auto auto auto auto;
