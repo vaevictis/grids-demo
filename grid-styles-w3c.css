@@ -11,6 +11,22 @@ body {
   grid-gap: 5px;
 }
 
+/*@media (max-width:480px) {
+  body {
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+
+    grid-template-areas:
+      "header"
+      "nav"
+      "aside"
+      "main"
+      "footer"
+      "ads";
+    grid-gap: 5px;
+  }
+}*/
+
 header {
   border: 1px solid lavender;
   /*grid-row-start: 1;
